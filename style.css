@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "RobotoFlex-Variable";
+  src: url("fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\XOPQ\XTRA\YOPQ\YTAS\YTDE\YTFI\YTLC\YTUC\opsz\slnt\wdth\wght.ttf");
+}
+
+html {
+  font-size: 25px;
+  color: white;
+}
+
+body {
+  font-family: "RobotoFlex-Variable", sans-serif;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.506);
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* position: fixed;
+  right: 0;
+  border-radius: 0px 0px 0px 5px; */
+}
+
+.nav-imgs {
+  padding: none;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+#nav-logo {
+  width: 2rem;
+  padding-left: 0.5rem;
+}
+
+#navigation {
+  display: flex;
+  color: white;
+  list-style-type: none;
+}
+
+#navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link {
+  padding: 0px 30px 0px 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#title-img {
+  width: 100%;
+  height: auto;
+  /* Transparentes Overlay über Titelbild */
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+#logo-gold {
+  /* Overlapping logo */
+  position: absolute;
+  width: 50%;
+  bottom: 12rem;
+  top: 2rem;
+}
+
+#music {
+  display: flex;
+}
+
+.iframe {
+  display: flex;
+  color: white;
+  flex: 50%;
+  align-content: center;
+  justify-content: center;
+}
+
+.textbox {
+  display: flex;
+  flex: 50%;
+  background-color: rgb(97, 0, 0);
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#video {
+  background-color: black;
+  width: 100%;
+}
+
+#shows {
+  display: flex;
+}
+
+#show-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#deathcore {
+  display: flex;
+  color: black;
+  background-color: white;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0% 2%;
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  font-size: 16px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.icon {
+  width: 0.8rem;
+  padding: 0rem 0.5rem;
+}
+
+#footer {
+  display: flex;
+  list-style-type: none;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
