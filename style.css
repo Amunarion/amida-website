@@ -1,28 +1,7 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("fonts/Roboto/Roboto-Regular.ttf") format(".ttf");
-  font-family: "RobotoBlack";
-  src: url("fonts/Roboto/Roboto-Black.ttf") format(".ttf");
-  font-family: "RobotoBlackItalic";
-  src: url("fonts/Roboto/Roboto-BlackItalic.ttf") format(".ttf");
-  font-family: "RobotoBold";
-  src: url("fonts/Roboto/Roboto-Bold.ttf") format(".ttf");
-  font-family: "RobotoBoldItalic";
-  src: url("fonts/Roboto/Roboto-BoldItalic.ttf") format(".ttf");
-  font-family: "RobotoItalic";
-  src: url("fonts/Roboto/Roboto-Italic.ttf") format(".ttf");
-  font-family: "RobotoLight";
-  src: url("fonts/Roboto/Roboto-Light.ttf") format(".ttf");
-  font-family: "RobotoMedium";
-  src: url("fonts/Roboto/Roboto-Medium.ttf") format(".ttf");
-  font-family: "RobotoLightItalic";
-  src: url("fonts/Roboto/Roboto-LightItalic.ttf") format(".ttf");
-  font-family: "RobotoMediumItalic";
-  src: url("fonts/Roboto/Roboto-MediumItalic.ttf") format(".ttf");
-  font-family: "RobotoThin";
-  src: url("fonts/Roboto/Roboto-Thin.ttf") format(".ttf");
-  font-family: "RobotoThinItalic";
-  src: url("fonts/Roboto/Roboto-ThinItalic.ttf") format(".ttf");
+  font-family: "RobotoFlex";
+  src: url("fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf")
+    format(".ttf");
 }
 
 html {
@@ -31,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "RobotoFlex", sans-serif;
   background-color: black;
 }
 
@@ -43,6 +22,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  /* z-index: https://www.w3schools.com/cssref/pr_pos_z-index.php" */
+  z-index: 1;
   /* position: fixed;
   right: 0;
   border-radius: 0px 0px 0px 5px; */
@@ -60,7 +41,6 @@ h1 {
 }
 
 h2 {
-  font-family: "RobotoBlackItalic", sans-serif;
   font-style: italic;
 }
 
@@ -78,7 +58,6 @@ h2 {
 #navigation a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .link {
