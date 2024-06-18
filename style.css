@@ -104,6 +104,10 @@ h2 {
   display: flex;
 }
 
+.textbox p {
+  padding: 5%;
+}
+
 .iframe {
   display: flex;
   color: white;
@@ -150,7 +154,7 @@ h2 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 0% 2%;
+  padding: 2%;
 }
 
 footer {
