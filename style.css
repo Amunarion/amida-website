@@ -20,7 +20,7 @@ body {
 nav {
   display: flex;
   font-size: 16px;
-  background-color: rgba(0, 0, 0, 0.506);
+  background-color: rgb(0, 0, 0);
   align-content: center;
   justify-content: space-between;
   align-items: center;
@@ -146,15 +146,50 @@ h2 {
   margin: 0;
 }
 
-#deathcore {
+.content-block-100 {
   display: flex;
-  color: black;
-  background-color: white;
   align-content: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   padding: 2%;
+}
+
+button {
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 1% 5%;
+  margin: 1% 1%;
+  font-size: large;
+  border: none;
+}
+
+.button-red {
+  background-color: rgb(97, 0, 0);
+  color: white;
+}
+
+input {
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 1% 5%;
+  margin: 2% 1%;
+  font-size: large;
+}
+
+#deathcore {
+  color: black;
+  background-color: white;
+}
+
+#message {
+  width: 77.5%;
+  height: 200px;
+}
+
+#footer-hr {
+  width: 100%;
+  margin: 0;
 }
 
 footer {
@@ -189,4 +224,36 @@ footer {
 #footer a {
   color: white;
   text-decoration: none;
+}
+
+/* LEGAL PAGES*/
+
+.legal p {
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+.legal div {
+  background-color: white;
+  color: black;
+  display: flex;
+  padding: 10% 30%;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+}
+
+.cookies p {
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+.cookies div {
+  background-color: white;
+  color: black;
+  display: flex;
+  padding: 2% 30%;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
 }
