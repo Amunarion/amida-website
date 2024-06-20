@@ -155,6 +155,15 @@ h2 {
   padding: 2%;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
 button {
   border-radius: 5px;
   box-sizing: border-box;
@@ -164,27 +173,9 @@ button {
   border: none;
 }
 
-.button-red {
-  background-color: rgb(97, 0, 0);
-  color: white;
-}
-
-input {
-  border-radius: 5px;
-  box-sizing: border-box;
-  padding: 1% 5%;
-  margin: 2% 1%;
-  font-size: large;
-}
-
 #deathcore {
   color: black;
   background-color: white;
-}
-
-#message {
-  width: 77.5%;
-  height: 200px;
 }
 
 #footer-hr {
