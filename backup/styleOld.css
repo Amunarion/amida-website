@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 25px;
   color: white;
 }
 
@@ -31,8 +31,6 @@ nav {
   /* sticky: https://www.w3schools.com/css/css_positioning.asp */
   position: sticky;
   top: 0;
-  /* SPÄTER DEAKTIVIEREN */
-  overflow: hidden;
 }
 
 .nav-imgs {
@@ -112,7 +110,7 @@ h2 {
 }
 
 #music-player {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -122,17 +120,12 @@ h2 {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  width: 90%;
+  width: 50%;
   border: 2px solid white;
 }
 
 #video-player {
   width: 100%;
-}
-
-#iframevideo {
-  width: 100%;
-  height: auto;
 }
 
 #video {
@@ -183,8 +176,8 @@ h2 {
 button {
   border-radius: 5px;
   box-sizing: border-box;
-  padding: 2% 10%;
-  margin: 2% 2%;
+  padding: 1% 5%;
+  margin: 1% 1%;
   font-size: large;
   border: none;
 }
@@ -223,7 +216,7 @@ footer {
   align-items: center;
   flex-direction: column;
   background-color: black;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .icons {
@@ -282,30 +275,7 @@ footer {
   justify-items: center;
 }
 
-@media screen and (min-width: 500px) {
-  html {
-    font-size: 20px;
-  }
-
-  #music-player {
-    width: 100%;
-  }
-
-  #upcoming-shows {
-    width: 90%;
-  }
-
-  #iframevideo {
-    height: 300px;
-  }
-
-  button {
-    padding: 2% 10%;
-    margin: 2% 2%;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 500px) {
   html {
     font-size: 20px;
   }
@@ -319,45 +289,28 @@ footer {
     border: 2px solid white;
   }
 
-  #iframevideo {
-    height: 450px;
-  }
-
   button {
     padding: 2% 10%;
     margin: 2% 2%;
   }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (max-width: 768px) {
   html {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #music-player {
-    width: 50%;
+    width: 100%;
   }
 
   #upcoming-shows {
-    width: 50%;
-  }
-
-  #video-player {
-    width: 100%;
-    height: auto;
-  }
-
-  #iframevideo {
-    width: 100%;
-    height: 600px;
+    width: 90%;
+    border: 2px solid white;
   }
 
   button {
-    padding: 1% 5%;
-    margin: 1% 1%;
-  }
-
-  footer {
-    font-size: 16px;
+    padding: 2% 10%;
+    margin: 2% 2%;
   }
 }
