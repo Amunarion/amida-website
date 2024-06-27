@@ -13,8 +13,8 @@ body {
   font-family: "RobotoFlex", sans-serif;
   background-color: black;
 
-  /* Überstehendes abschneiden - nur in der Breite (X-Achse), damit der Website-Content weiter unten noch verfügbar ist. https://stackoverflow.com/questions/51679982/how-to-cut-off-an-image-at-the-edge-of-the-screen
-  overflow-x: hidden; */
+  /* Überstehendes abschneiden - nur in der Breite (X-Achse), damit der Website-Content weiter unten noch verfügbar ist. https://stackoverflow.com/questions/51679982/how-to-cut-off-an-image-at-the-edge-of-the-screen  */
+  overflow-x: hidden;
 }
 
 nav {
@@ -81,13 +81,13 @@ h2 {
 }
 
 #title-img {
-  /* Skalieren */
+  /* Skalieren
   width: 100%;
-  height: auto;
+  height: auto; */
 
-  /* Seiten abschneiden (body {overflow-x: hidden} aktivieren!);
+  /* Seiten abschneiden (body {overflow-x: hidden} aktivieren!); */
   height: 100%;
-  width: auto; */
+  width: auto;
 
   /* Transparentes Overlay über Titelbild */
   object-fit: cover;
@@ -97,9 +97,9 @@ h2 {
 #logo-gold {
   /* Overlapping logo */
   position: absolute;
-  width: 50%;
+  width: 90%;
   bottom: 12rem;
-  top: 2rem;
+  top: 12rem;
 }
 
 #music {
@@ -287,6 +287,12 @@ footer {
     font-size: 20px;
   }
 
+  #logo-gold {
+    width: 90%;
+    bottom: 12rem;
+    top: 5.5rem;
+  }
+
   #music-player {
     width: 100%;
   }
@@ -308,6 +314,12 @@ footer {
 @media screen and (min-width: 768px) {
   html {
     font-size: 20px;
+  }
+
+  #logo-gold {
+    width: 70%;
+    bottom: 12rem;
+    top: 4.5rem;
   }
 
   #music-player {
@@ -332,6 +344,26 @@ footer {
 @media screen and (min-width: 990px) {
   html {
     font-size: 25px;
+  }
+
+  #title-img {
+    /* Skalieren */
+    width: 100%;
+    height: auto;
+
+    /* Seiten abschneiden (body {overflow-x: hidden} aktivieren!);
+    height: 100%;
+    width: auto; */
+
+    /* Transparentes Overlay über Titelbild */
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
+  #logo-gold {
+    width: 50%;
+    bottom: 12rem;
+    top: 2rem;
   }
 
   #music-player {
