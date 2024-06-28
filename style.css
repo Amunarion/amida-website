@@ -12,7 +12,6 @@ html {
 body {
   font-family: "RobotoFlex", sans-serif;
   background-color: black;
-
   /* Überstehendes abschneiden - nur in der Breite (X-Achse), damit der Website-Content weiter unten noch verfügbar ist. https://stackoverflow.com/questions/51679982/how-to-cut-off-an-image-at-the-edge-of-the-screen  */
   overflow-x: hidden;
 }
@@ -243,6 +242,8 @@ footer {
 #footer {
   display: flex;
   list-style-type: none;
+  flex-direction: column;
+  padding: 0;
 }
 
 #footer a {
@@ -308,6 +309,10 @@ footer {
   button {
     padding: 2% 10%;
     margin: 2% 2%;
+  }
+
+  #footer {
+    flex-direction: row;
   }
 }
 
