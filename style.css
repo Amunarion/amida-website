@@ -52,7 +52,7 @@ body {
 }
 
 #nav-logo-mobile {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 #burgermenu {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
@@ -95,8 +95,9 @@ h1 {
 }
 
 h2 {
-  font-weight: lighter;
+  font-weight: normal;
   margin: 0;
+  padding: 25px 0px 15px 0px;
 }
 
 .link {
@@ -112,6 +113,7 @@ h2 {
   position: relative;
 
   overflow-x: hidden;
+  padding-top: 0px;
 }
 
 #title-img {
@@ -170,6 +172,7 @@ h2 {
 
 #video-player {
   width: 100%;
+  height: auto;
 }
 
 #iframevideo {
@@ -192,6 +195,7 @@ h2 {
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding-bottom: 10px;
   /* background-color: rgb(125, 0, 0); */
 }
 
@@ -304,6 +308,10 @@ footer {
   text-decoration: none;
 }
 
+#legal-links {
+  width: 100%;
+}
+
 /* LEGAL PAGES*/
 
 .legal p {
@@ -369,6 +377,7 @@ footer {
 
   #footer {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -385,15 +394,6 @@ footer {
 
   .content-block-100 {
     padding: 2% 10%;
-  }
-
-  #music-player-mobile {
-    display: none;
-  }
-
-  #music-player {
-    display: block;
-    width: 100%;
   }
 
   #upcoming-shows {
@@ -413,6 +413,11 @@ footer {
 @media screen and (min-width: 990px) {
   html {
     font-size: 25px;
+  }
+
+  h2 {
+    font-weight: lighter;
+    padding: 10px 0px;
   }
 
   #navbar-mobile {
@@ -462,8 +467,17 @@ footer {
     padding: 2% 15%;
   }
 
+  #music-player-mobile {
+    display: none;
+  }
+
   #music-player {
+    display: block;
     width: 900px;
+  }
+
+  #shows {
+    padding-bottom: 20px;
   }
 
   #upcoming-shows {
