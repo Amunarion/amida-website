@@ -47,6 +47,12 @@ body {
   display: none;
 }
 
+#navigation-mobile-links {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
 #navbar-desktop {
   display: none;
 }
