@@ -21,9 +21,7 @@ function toggleMenu() {
 
   if (menu.style.display === "block") {
     menu.style.display = "none";
-    navbarMobile.style.backgroundColor = "transparent";
   } else {
     menu.style.display = "block";
-    navbarMobile.style.backgroundColor = "black";
   }
 }

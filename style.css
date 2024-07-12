@@ -19,13 +19,16 @@ body {
 
 #navbar-mobile {
   display: block;
-  background-color: transparent;
+  background-color: black;
   display: flex;
   flex-direction: column;
+  align-items: space-between;
   /* align-items: flex-end; */
   position: absolute;
   z-index: 1;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 #navigation-mobile {
@@ -48,6 +51,11 @@ body {
   display: none;
 }
 
+#nav-logo-mobile {
+  height: 40px;
+  width: auto;
+}
+
 #nav-logo {
   width: 2rem;
   padding-left: 0.5rem;
@@ -65,8 +73,8 @@ body {
 }
 
 #burgermenu {
-  width: 15%;
-  height: auto;
+  height: 40px;
+  width: auto;
 }
 
 #burgermenu:hover {
@@ -134,10 +142,17 @@ h2 {
   align-content: center;
   align-items: center;
   justify-content: center;
-  background-color: rgb(125, 0, 0);
+  /* background-color: rgb(125, 0, 0); */
+}
+
+#music-player-mobile {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 #music-player {
+  display: none;
   width: 100%;
   height: auto;
 }
@@ -145,11 +160,12 @@ h2 {
 #upcoming-shows {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   align-items: center;
-  width: 90%;
-  border: 2px solid white;
+  width: 100%;
+  /* Frame
+  border: 2px solid white; */
 }
 
 #video-player {
@@ -172,15 +188,24 @@ h2 {
 
 #shows {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
+  /* background-color: rgb(125, 0, 0); */
 }
 
 .show-data {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 44, 44);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+  width: 90%;
 }
 
 #show-hr {
@@ -209,8 +234,8 @@ h2 {
 button {
   border-radius: 5px;
   box-sizing: border-box;
-  padding: 2% 10%;
-  margin: 2% 2%;
+  padding: 7.5px 20px;
+  margin: 10px 10px;
   font-size: large;
   border: none;
 }
@@ -316,10 +341,6 @@ footer {
     font-size: 20px;
   }
 
-  #burgermenu {
-    width: 10%;
-  }
-
   #logo-gold {
     width: 90%;
     bottom: 12rem;
@@ -343,8 +364,7 @@ footer {
   }
 
   button {
-    padding: 2% 10%;
-    margin: 2% 2%;
+    padding: 10px 50px;
   }
 
   #footer {
@@ -357,10 +377,6 @@ footer {
     font-size: 20px;
   }
 
-  #burgermenu {
-    width: 8%;
-  }
-
   #logo-gold {
     width: 70%;
     bottom: 12rem;
@@ -371,13 +387,18 @@ footer {
     padding: 2% 10%;
   }
 
+  #music-player-mobile {
+    display: none;
+  }
+
   #music-player {
+    display: block;
     width: 100%;
   }
 
   #upcoming-shows {
-    width: 90%;
-    border: 2px solid white;
+    width: 80%;
+    /* border: 2px solid white; */
   }
 
   #iframevideo {
@@ -385,8 +406,7 @@ footer {
   }
 
   button {
-    padding: 2% 10%;
-    margin: 2% 2%;
+    padding: 10px 50px;
   }
 }
 
@@ -447,7 +467,18 @@ footer {
   }
 
   #upcoming-shows {
-    width: 900px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .show-data {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+
+    padding: 20px;
+    margin: 20px 20px 0px 20px;
   }
 
   #video-player {
@@ -461,8 +492,6 @@ footer {
   }
 
   button {
-    padding: 1% 5%;
-    margin: 1% 1%;
   }
 
   footer {
