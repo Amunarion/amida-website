@@ -60,6 +60,7 @@ body {
 #nav-logo-mobile {
   height: 60px;
   width: auto;
+  padding-left: 10px;
 }
 
 #nav-logo {
@@ -81,10 +82,6 @@ body {
 #burgermenu {
   height: 60px;
   width: auto;
-}
-
-#burgermenu:hover {
-  cursor: pointer;
 }
 
 .nav-imgs {
