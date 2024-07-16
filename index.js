@@ -17,11 +17,13 @@ https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 
 function toggleMenu() {
   const menu = document.getElementById("navbar-mobile-menu");
-  const navbarMobile = document.getElementById("navbar-mobile");
+  const burgerMenu = document.getElementById("burgermenu");
 
   if (menu.style.display === "block") {
     menu.style.display = "none";
+    burgerMenu.src = "images/Burgermenu.png";
   } else {
     menu.style.display = "block";
+    burgerMenu.src = "images/CloseButton.png";
   }
 }
