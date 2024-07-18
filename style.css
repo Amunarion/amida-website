@@ -257,6 +257,7 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: rgb(167, 167, 167);
 }
 
 button:active {
