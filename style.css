@@ -356,6 +356,29 @@ footer {
   justify-items: center;
 }
 
+/* 404 PAGE */
+
+#title-img-404 {
+  /* Seiten abschneiden (body {overflow-x: hidden} aktivieren!); */
+  height: 100%;
+  width: auto;
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+
+  /* Transparentes Overlay über Titelbild */
+  object-fit: cover;
+  opacity: 0.35;
+}
+
+.text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 500px) {
   html {
     font-size: 20px;
