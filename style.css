@@ -76,6 +76,10 @@ body {
   padding-left: 0.5rem;
 }
 
+.nav-imgs a {
+  text-decoration: none;
+}
+
 #navigation {
   display: flex;
   color: white;
