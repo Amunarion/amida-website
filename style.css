@@ -100,6 +100,7 @@ body {
 #burgermenu {
   height: 60px;
   width: auto;
+  margin-right: 10px;
 }
 
 .nav-imgs {
