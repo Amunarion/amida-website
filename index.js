@@ -17,6 +17,7 @@ https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 
 const menu = document.getElementById("navbar-mobile-menu");
 const burgerMenu = document.getElementById("burgermenu");
+const body = document.getElementById("home");
 
 function toggleMenu() {
   if (menu.style.display === "block") {
@@ -27,5 +28,13 @@ function toggleMenu() {
     menu.style.display = "block";
     burgerMenu.src = "images/CloseButton.png";
     burgerMenu.alt = "Close the menu";
+  }
+}
+
+body.addEventListener("keydown", escClose);
+
+function escClose(key) {
+  if (key.keyCode === 27) {
+    menu.style.display = "none";
   }
 }
