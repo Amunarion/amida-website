@@ -36,5 +36,7 @@ body.addEventListener("keydown", escClose);
 function escClose(key) {
   if (key.keyCode === 27) {
     menu.style.display = "none";
+    burgerMenu.src = "images/Burgermenu.png";
+    burgerMenu.alt = "Open the menu";
   }
 }
