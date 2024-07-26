@@ -42,6 +42,7 @@ body {
   flex-direction: column;
   color: white;
   list-style-type: none;
+  line-height: 200%;
 }
 
 #navigation-mobile a {
@@ -227,6 +228,9 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  line-height: 150%;
+  text-align: center;
+  font-size: smaller;
 }
 
 .bold {
@@ -234,6 +238,9 @@ h2 {
 }
 
 .show-data {
+  display: flex;
+  display: grid;
+  justify-content: center;
   box-sizing: border-box;
   background-color: rgb(44, 44, 44);
   border-radius: 10px;
@@ -246,7 +253,7 @@ h2 {
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   padding: 2%;
 }
 
@@ -513,6 +520,7 @@ footer {
 
   .content-block-100 {
     padding: 2% 15%;
+    text-align: center;
   }
 
   #music-player-mobile {
@@ -539,9 +547,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     /* height: 300px; */
-
     padding: 20px;
-    margin: 20px 20px 0px 20px;
   }
 
   #video-player {
