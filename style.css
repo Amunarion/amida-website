@@ -223,22 +223,12 @@ h2 {
   /* background-color: rgb(125, 0, 0); */
 }
 
-.data-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  line-height: 150%;
-  text-align: center;
-  font-size: smaller;
-}
-
 .bold {
   display: block;
 }
 
 .show-data {
-  display: flex;
+  flex: 1;
   display: grid;
   justify-content: center;
   box-sizing: border-box;
@@ -246,6 +236,9 @@ h2 {
   border-radius: 10px;
   padding: 20px 50px;
   width: 90%;
+  text-align: center;
+  font-size: smaller;
+  line-height: 150%;
 }
 
 .content-block-100 {
@@ -320,6 +313,7 @@ footer {
   align-content: center;
   align-items: center;
   padding: 1rem 0rem;
+  list-style-type: none;
 }
 
 .icon {
